@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Telegram">
+    <meta name="description" content="Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.">
+    <link rel="shortcut icon" href="https://web.telegram.org/a/icon-192x192.png" type="image/x-icon">
+    <title>Telegram</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' 
+    integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b15ca057c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="content">
+        <form class="form__auth">
+            <input type="text" name="name" class="auth__input" placeholder="Name...">
+            <div class="password">
+                <input type="password" name="pass" id="pass" class="auth__input" placeholder="Password...">
+                <button type="button" class="show-pass" onclick="show_pass()">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" aria-hidden="true" role="img" focusable="false" class="DeleteAllIcon__deleteAllIcon___CUI9j hidepass"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g opacity="0.01"><rect fill="#FFBFF9" x="0" y="0" width="24" height="24"></rect><rect fill="#FFFFFF" x="1" y="1" width="22" height="22"></rect><g stroke-width="1" transform="translate(0.000000, 1.000000)" stroke="#FF2AEC"><rect stroke-width="0.25" x="6.625" y="0.125" width="10.75" height="21.75" rx="2"></rect><path d="M8.5,0.125 C7.46446609,0.125 6.625,0.964466094 6.625,2 L6.625,20 C6.625,21.0355339 7.46446609,21.875 8.5,21.875 L15.5,21.875 C16.5355339,21.875 17.375,21.0355339 17.375,20 L17.375,2 C17.375,0.964466094 16.5355339,0.125 15.5,0.125 L8.5,0.125 Z" stroke-width="0.25" transform="translate(12.000000, 11.000000) rotate(-270.000000) translate(-12.000000, -11.000000) "></path><path d="M1,11 L23,11" stroke-width="0.3" stroke-linecap="square" stroke-dasharray="1" transform="translate(12.000000, 11.000000) rotate(-90.000000) translate(-12.000000, -11.000000) "></path><path d="M0.978218914,11 L22.9782189,11" stroke-width="0.3" stroke-linecap="square" stroke-dasharray="1" transform="translate(11.978219, 11.000000) rotate(-180.000000) translate(-11.978219, -11.000000) "></path><path d="M-2.8492424,11 L26.8492424,11" stroke-width="0.3" stroke-linecap="square" stroke-dasharray="1" transform="translate(12.000000, 11.000000) rotate(-135.000000) translate(-12.000000, -11.000000) "></path><path d="M-2.8492424,11 L26.8492424,11" stroke-width="0.3" stroke-linecap="square" stroke-dasharray="1" transform="translate(12.000000, 11.000000) rotate(-45.000000) translate(-12.000000, -11.000000) "></path><circle stroke-width="0.5" cx="12" cy="11" r="8.75"></circle><circle stroke-width="0.5" cx="12" cy="11" r="5.25"></circle><rect stroke-width="0.5" x="3.25" y="2.25" width="17.5" height="17.5" rx="2"></rect></g></g><path d="M12.13525,18.512 C16.71175,18.512 20.7655,16.27775 23.26975,12.842 C20.7655,9.407 16.71175,7.17275 12.13525,7.17275 C7.558,7.17275 3.50425,9.407 1,12.842 C3.50425,16.27775 7.558,18.512 12.13525,18.512 Z M8.51125,7.66475 C7.6285,8.573 7.08475,9.812 7.08475,11.1785 C7.08475,13.96325 9.34225,16.22075 12.12775,16.22075 C14.9125,16.22075 17.17,13.96325 17.17,11.1785 C17.17,9.812 16.62625,8.573 15.7435,7.66475 M3.88675,19.628 L18.34,5 L3.88675,19.628 Z" stroke="#3B3331" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>                        
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" aria-hidden="true" role="img" focusable="false" class="showpass" style="display: none;"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g opacity="0.01"><rect fill="#FFBFF9" x="0" y="0" width="24" height="24"></rect><rect fill="#FFFFFF" x="1" y="1" width="22" height="22"></rect><g stroke-width="1" transform="translate(0.000000, 1.000000)" stroke="#FF2AEC"><rect stroke-width="0.25" x="6.625" y="0.125" width="10.75" height="21.75" rx="2"></rect><path d="M8.5,0.125 C7.46446609,0.125 6.625,0.964466094 6.625,2 L6.625,20 C6.625,21.0355339 7.46446609,21.875 8.5,21.875 L15.5,21.875 C16.5355339,21.875 17.375,21.0355339 17.375,20 L17.375,2 C17.375,0.964466094 16.5355339,0.125 15.5,0.125 L8.5,0.125 Z" stroke-width="0.25" transform="translate(12.000000, 11.000000) rotate(-270.000000) translate(-12.000000, -11.000000) "></path><path d="M1,11 L23,11" stroke-width="0.3" stroke-linecap="square" stroke-dasharray="1" transform="translate(12.000000, 11.000000) rotate(-90.000000) translate(-12.000000, -11.000000) "></path><path d="M0.978218914,11 L22.9782189,11" stroke-width="0.3" stroke-linecap="square" stroke-dasharray="1" transform="translate(11.978219, 11.000000) rotate(-180.000000) translate(-11.978219, -11.000000) "></path><path d="M-2.8492424,11 L26.8492424,11" stroke-width="0.3" stroke-linecap="square" stroke-dasharray="1" transform="translate(12.000000, 11.000000) rotate(-135.000000) translate(-12.000000, -11.000000) "></path><path d="M-2.8492424,11 L26.8492424,11" stroke-width="0.3" stroke-linecap="square" stroke-dasharray="1" transform="translate(12.000000, 11.000000) rotate(-45.000000) translate(-12.000000, -11.000000) "></path><circle stroke-width="0.5" cx="12" cy="11" r="8.75"></circle><circle stroke-width="0.5" cx="12" cy="11" r="5.25"></circle><rect stroke-width="0.5" x="3.25" y="2.25" width="17.5" height="17.5" rx="2"></rect></g></g><path d="M12.13525,18.33925 C16.71175,18.33925 20.7655,16.105 23.26975,12.67 C20.7655,9.23425 16.71175,7 12.13525,7 C7.558,7 3.50425,9.23425 1,12.67 C3.50425,16.105 7.558,18.33925 12.13525,18.33925 Z M8.51125,7.49275 C7.6285,8.40025 7.08475,9.64 7.08475,11.00575 C7.08475,13.7905 9.34225,16.04875 12.12775,16.04875 C14.9125,16.04875 17.17,13.7905 17.17,11.00575 C17.17,9.63925 16.62625,8.40025 15.7435,7.49275" id="mask-EHXNIFPJ" stroke="#3B3331" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+                </button>
+            </div>
+            <input type="submit" value="Auth" class="auth--btn">
+        </form>
+    </div>
+    <div id="log">
+    </div>
+    <script>
+       const form = document.querySelector('.form__auth');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            formData.get('name'); 
+            [...formData.values()]; 
+            [...formData.entries()];
+            let obj = Object.fromEntries(formData);
+            if (obj.name == 'misha' && obj.pass == 'pedik') {
+                let success = document.createElement('div');
+                success.setAttribute('id','success')
+                success.innerHTML = 'Сейчас вас перенаправит в панель!'
+                let parent = document.getElementById('log')
+                parent.appendChild(success)
+                setTimeout(auth, 4000)
+            }
+            else {
+                let err = document.createElement('div');
+                err.setAttribute('id','err')
+                err.innerHTML = 'Неверные данные!'
+                let parent = document.getElementById('log')
+                parent.appendChild(err)
+            }
+        });
+        function show_pass () {
+            if (document.querySelector('.showpass').style.display == 'none') {
+                document.querySelector('.hidepass').style.display = 'none'
+                document.querySelector('.showpass').style.display = 'block'
+                document.getElementById('pass').type = 'text'
+            }
+            else {
+                document.querySelector('.hidepass').style.display = 'block'
+                document.querySelector('.showpass').style.display = 'none'
+                document.getElementById('pass').type = 'password'
+            }
+        }
+        function auth () {
+            window.location.href = 'https://vk.com/olddeala89?z=photo733757892_457239435%2Fphoto_feed733757892'
+        }
+    </script>
+</body>
+</html>
